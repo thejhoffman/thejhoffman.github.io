@@ -109,6 +109,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
               <div className="text">
                 <p>
                   About detail
+                  Added line to test deploy
                 </p>
               </div>
             </div>
