@@ -31,7 +31,7 @@ const reducer = (state, action) => {
   }
 };
 
-const state = (props) => {
+const State = (props) => {
   const initialState = {
     nav: "home",
     color: "#4169e1",
@@ -107,6 +107,6 @@ const state = (props) => {
   );
 };
 
-export default state;
+export default State;
 
 export { context };
