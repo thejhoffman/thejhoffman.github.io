@@ -1,35 +1,41 @@
 import Modal from "./Modal";
+import { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+import Image from "next/image";
+import { useEffect } from "react";
+import { dataImage } from "../../utilits";
 
-const PortfolioModal = ({ close, open }) => {
+const PortfolioModal = ({ data, close, open }) => {
+  const [openLightBox, setOpenLightBox] = useState(false);
+
+  useEffect(() => {
+    dataImage();
+  }, [data]);
+
   return (
     <Modal close={close} open={open}>
       <div className="portfolio_popup_details">
         <div className="top_image">
-          <img src="img/thumbs/4-2.jpg" alt="" />
-          <div className="main" data-img-url="img/portfolio/4.jpg" />
+          <Image
+            src="/img/thumbs/4-2.jpg"
+            alt=""
+            width={800}
+            height={400}
+          />
+          <div className="main" data-img-url={data.mainImage} />
         </div>
         <div className="portfolio_main_title">
-          <h3>Delicious Apple</h3>
+          <h3>{data.name}</h3>
           <span>
-            <a href="#">Detail</a>
+            <a href={data.detailLink}>{data.detail}</a>
           </span>
           <div />
         </div>
 
         <div className="text">
           <p>
-            An apple is an edible fruit produced by an apple tree. Apple trees
-            are cultivated worldwide and are the most widely grown species in
-            the genus Malus. The tree originated in Central Asia, where its wild
-            ancestor, Malus sieversii, is still found today.
-          </p>
-          <p>
-            Apples grown from seed tend to be very different from those of the
-            parents, and the resultant fruit frequently lack desired
-            characteristics. Generally then, apple cultivars are propagated by
-            clonal grafting onto rootstocks. Apple trees grown without
-            rootstocks tend to be larger and much slower to fruit after
-            planting.
+            {data.description}
           </p>
         </div>
         <div className="additional_images">
@@ -41,7 +47,15 @@ const PortfolioModal = ({ close, open }) => {
                   <div className="main" data-img-url="img/portfolio/7.jpg" />
                   <a
                     className="edrea_tm_full_link zoom"
-                    href="img/portfolio/7.jpg"
+                    href="#"
+                    onClick={() => setOpenLightBox(true)}
+                  />
+                  <Lightbox
+                    open={openLightBox}
+                    close={() => setOpenLightBox(false)}
+                    slides={[
+                      { src: "img/portfolio/7.jpg" },
+                    ]}
                   />
                 </div>
               </div>
