@@ -14,7 +14,7 @@ import Settings from "./Settings";
 const Layout = ({ children }) => {
   useEffect(() => {
     dataImage();
-    customCursor();
+    // customCursor();
     preloader();
     waves();
     imgToSVG();
