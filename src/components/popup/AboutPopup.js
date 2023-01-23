@@ -116,6 +116,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 <p>
                   About detail
                   Added line to test deploy
+                  Another line to test deploy again
                 </p>
               </div>
             </div>
