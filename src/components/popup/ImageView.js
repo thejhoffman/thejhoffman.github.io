@@ -18,15 +18,15 @@ const ImgViews = ({ close, src }) => {
         >
           <div className="mfp-content" ref={domNode}>
             <div className="mfp-iframe-scaler">
-              {/* <button
+              <button
                 title="Close (Esc)"
                 type="button"
                 className="mfp-close"
                 onClick={() => close()}
               >
                 ×
-              </button> */}
-              <img className="mfp-img" src={src} />
+              </button>
+              {/* <img className="mfp-img" src={src} /> */}
             </div>
           </div>
           <div className="mfp-preloader">Loading...</div>
