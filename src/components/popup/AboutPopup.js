@@ -5,6 +5,7 @@ import { context } from "../../context/context";
 import { testimonialSlider } from "../../sliderProps";
 import AnimatedText from "../AnimatedText";
 import Modal from "./Modal";
+import Image from "next/image";
 
 const AboutPopup = ({ open, close, aboutData }) => {
   const colorContext = useContext(context);
@@ -18,8 +19,14 @@ const AboutPopup = ({ open, close, aboutData }) => {
           <div className="left_inner">
             <div className="author">
               <div className="avatar_image">
-                <img src="img/thumbs/1-1.jpg" alt="" />
-                <div className="main" data-img-url="img/about/1.jpg" />
+                <Image
+                  src="/img/about/profile.png"
+                  alt="profile picture"
+                  width={132}
+                  height={132}
+                />
+                {/* <img src="img/about/profile.png" alt="" /> */}
+                <div className="main" data-img-url="img/about/profile.png" />
               </div>
               <div className="short">
                 <h3 className="name">
