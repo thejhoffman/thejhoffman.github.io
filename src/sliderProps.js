@@ -1,10 +1,10 @@
 import SwiperCore, {
-  Autoplay,
+  // Autoplay,
   EffectFade,
   Navigation,
   Pagination,
 } from "swiper";
-SwiperCore.use([Pagination, Navigation, EffectFade, Autoplay]);
+SwiperCore.use([Pagination, Navigation, EffectFade]);
 
 const props = (currentCls, totalCls, allCls) => {
   return {
