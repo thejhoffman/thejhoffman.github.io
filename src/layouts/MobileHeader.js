@@ -18,14 +18,13 @@ const MobileHeader = () => {
         <div className="topbar_inner">
           <div className="logo">
             <a href="#">
-              <img src="img/logo/logo.png" alt="" />
+              {/* <img src="img/logo/logo.png" alt="" /> */}
             </a>
           </div>
           <div className="trigger">
             <div
-              className={`hamburger hamburger--slider ${
-                toggle ? "is-active" : ""
-              }`}
+              className={`hamburger hamburger--slider ${toggle ? "is-active" : ""
+                }`}
             >
               <div className="hamburger-box" onClick={() => setToggle(!toggle)}>
                 <div className="hamburger-inner" />
