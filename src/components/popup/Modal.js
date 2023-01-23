@@ -3,7 +3,7 @@ import useClickOutside from "../../useClickOutside";
 
 const Modal = ({ open, close, children }) => {
   let domNode = useClickOutside(() => {
-    close();
+    // close();
   });
   return (
     <Fragment>
