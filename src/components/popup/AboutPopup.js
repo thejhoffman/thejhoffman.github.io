@@ -20,12 +20,11 @@ const AboutPopup = ({ open, close, aboutData }) => {
             <div className="author">
               <div className="avatar_image">
                 <Image
-                  src="/img/about/profile.png"
+                  src="/img/thumbs/1-1.jpg"
                   alt="profile picture"
                   width={132}
                   height={132}
                 />
-                {/* <img src="img/about/profile.png" alt="" /> */}
                 <div className="main" data-img-url="img/about/profile.png" />
               </div>
               <div className="short">

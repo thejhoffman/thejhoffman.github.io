@@ -67,12 +67,11 @@ const About = () => {
             <div className="left">
               <div className="image">
                 <Image
-                  src="/img/about/profile.png"
+                  src="/img/thumbs/1-1.jpg"
                   alt="profile picture"
                   width={320}
                   height={320}
                 />
-                {/* <img src="img/about/profile.png" alt="" /> */}
                 <div className="main" data-img-url="img/about/profile.png" />
               </div>
             </div>
