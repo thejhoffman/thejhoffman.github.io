@@ -462,7 +462,7 @@ export const waves = () => {
       this.uniforms.time = elapsed;
 
       if (this.count > 0) {
-        gl.clear(gl.COLORBUFFERBIT);
+        gl.clear(gl.COLOR_BUFFER_BIT);
         gl.drawArrays(gl.POINTS, 0, this.count);
       }
 
