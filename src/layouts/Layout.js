@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         <title>James Hoffman | Software Engineer</title>
       </Head>
       <PreLoader />
-      <ImageView />
+      {/* <ImageView /> */}
       <VideoPopup />
       <div
         className="edrea_tm_all_wrap"
@@ -38,22 +38,14 @@ const Layout = ({ children }) => {
         {/* WAVE DOTS */}
         <div className="waves" />
 
-        {/* WAVE DOTS */}
-        {/* SETTINGS */}
         <Settings />
-        {/* /SETTINGS */}
-        {/* MOBILE MENU */}
         <MobileHeader />
-        {/* /MOBILE MENU */}
-        {/* HEADER */}
         <Header />
-        {/* /HEADER */}
-        {/* CONTENT */}
         <div className="edrea_tm_content">{children}</div>
-        {/* /CONTENT */}
+
         {/* MAGIC CURSOR */}
         <Mouse />
-        {/* /MAGIC CURSOR */}
+
       </div>
     </State>
   );
