@@ -12,7 +12,7 @@ const Header = () => {
       <div className="header_inner">
         <div className="logo">
           <a href="#" onClick={() => changeNav("home")}>
-            <img src="img/logo/logo.png" alt="" />
+            {/* <img src="img/logo/logo.png" alt="" /> */}
           </a>
         </div>
         <div className="menu">
