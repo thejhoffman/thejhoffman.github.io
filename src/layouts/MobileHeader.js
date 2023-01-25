@@ -52,11 +52,11 @@ const MobileHeader = () => {
                   Portfolio
                 </a>
               </li>
-              <li className={activeNav("news")}>
+              {/* <li className={activeNav("news")}>
                 <a href="#news" onClick={() => onClick("news")}>
                   News
                 </a>
-              </li>
+              </li> */}
               <li className={activeNav("contact")}>
                 <a href="#contact" onClick={() => onClick("contact")}>
                   Contact
