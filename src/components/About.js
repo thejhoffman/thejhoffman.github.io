@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react";
 import AnimatedText from "./AnimatedText";
 import AboutPopup from "./popup/AboutPopup";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const aboutData = {
   firstName: "James",
@@ -71,6 +71,7 @@ const About = () => {
                   alt="profile picture"
                   width={320}
                   height={320}
+                  layout="responsive"
                 />
                 <div className="main" data-img-url="img/about/profile.png" />
               </div>

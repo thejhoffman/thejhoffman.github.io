@@ -5,7 +5,7 @@ import { context } from "../../context/context";
 import { testimonialSlider } from "../../sliderProps";
 import AnimatedText from "../AnimatedText";
 import Modal from "./Modal";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const AboutPopup = ({ open, close, aboutData }) => {
   const colorContext = useContext(context);
@@ -24,6 +24,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
                   alt="profile picture"
                   width={132}
                   height={132}
+                  layout="responsive"
                 />
                 <div className="main" data-img-url="img/about/profile.png" />
               </div>

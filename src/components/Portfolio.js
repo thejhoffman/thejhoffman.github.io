@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { portfolioSlider } from "../sliderProps";
 import PortfolioModal from "./popup/PortfolioModal";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const projectData = {
   largesseance: {

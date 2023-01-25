@@ -2,7 +2,7 @@ import Modal from "./Modal";
 import { useState } from "react";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { useEffect } from "react";
 import { dataImage } from "../../utilits";
 
