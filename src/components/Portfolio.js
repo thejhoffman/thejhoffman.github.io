@@ -221,8 +221,9 @@ const Portfolio = () => {
                         <Image
                           src="/img/thumbs/1-1.jpg"
                           alt={projectData.largesseance.mainImageAlt}
-                          width={390}
-                          height={390}
+                          width={1}
+                          height={1}
+                          layout="responsive"
                         />
                         <div
                           className="main"
@@ -250,8 +251,9 @@ const Portfolio = () => {
                         <Image
                           src="/img/thumbs/1-1.jpg"
                           alt={projectData.carcar.mainImageAlt}
-                          width={390}
-                          height={390}
+                          width={1}
+                          height={1}
+                          layout="responsive"
                         />
                         <div
                           className="main"
@@ -279,8 +281,9 @@ const Portfolio = () => {
                         <Image
                           src="/img/thumbs/1-1.jpg"
                           alt={projectData.tracker.mainImageAlt}
-                          width={390}
-                          height={390}
+                          width={1}
+                          height={1}
+                          layout="responsive"
                         />
                         <div
                           className="main"

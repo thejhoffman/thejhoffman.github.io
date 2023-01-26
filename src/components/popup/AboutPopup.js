@@ -22,8 +22,8 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 <Image
                   src="/img/thumbs/1-1.jpg"
                   alt="profile picture"
-                  width={132}
-                  height={132}
+                  width={1}
+                  height={1}
                   layout="responsive"
                 />
                 <div className="main" data-img-url="img/about/profile.png" />

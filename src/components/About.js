@@ -69,8 +69,8 @@ const About = () => {
                 <Image
                   src="/img/thumbs/1-1.jpg"
                   alt="profile picture"
-                  width={320}
-                  height={320}
+                  width={1}
+                  height={1}
                   layout="responsive"
                 />
                 <div className="main" data-img-url="img/about/profile.png" />
