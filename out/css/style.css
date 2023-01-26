@@ -15,7 +15,7 @@
 08) EDREA NEWS
 09) EDREA CONTACT
 10) EDREA MAGIC CURSOR
-11) EDREA MEDIA QUERIES (FOR SMALL DEVIVES)
+11) EDREA MEDIA QUERIES (FOR SMALL DEVICES)
 
 /*---------------------------------------------------*/
 /*	01) EDREA BASE
@@ -521,6 +521,9 @@ h6 {
   clear: both;
   float: left;
   display: flex;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1em;
 }
 .edrea_tm_about .left {
   width: 40%;
@@ -613,7 +616,7 @@ h6 {
   top: 70px;
   bottom: 70px;
   /* width: 800px; */
-  width: 900px;
+  width: 1000px;
   left: 50%;
   border-radius: 10px;
   transform: translateX(-50%);
@@ -2207,7 +2210,7 @@ h6 {
     margin-bottom: 30px;
   }
   .edrea_tm_modalbox .box_inner {
-    /* width: 700px; */
+    width: 900px;
     top: 35px;
     bottom: 35px;
   }
@@ -2285,7 +2288,12 @@ h6 {
   .edrea_tm_about {
     flex-direction: column;
     align-items: baseline;
-    padding: 0px 20px;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1em;
+
   }
   .edrea_tm_about .left {
     width: 100%;
@@ -2307,7 +2315,7 @@ h6 {
     padding-bottom: 25px;
   }
   .edrea_tm_modalbox .box_inner {
-    width: 700px;
+    width: 800px;
   }
   .edrea_tm_modalbox .close {
     left: auto;
