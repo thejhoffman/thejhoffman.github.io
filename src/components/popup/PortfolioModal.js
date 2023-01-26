@@ -6,9 +6,45 @@ import Image from "next/legacy/image";
 import { useEffect } from "react";
 import { dataImage } from "../../utilits";
 
-const PortfolioModal = ({ data, close, open }) => {
+const ImageWithLightbox = ({ image, index, imagesList }) => {
+  const StartImagesSlice = imagesList.slice(index);
+  const EndImagesSlice = imagesList.slice(0, index - imagesList.length);
+  const LightboxImages = StartImagesSlice.concat(EndImagesSlice);
+  LightboxImages.forEach((element, index) => {
+    LightboxImages[index] = { src: element };
+  });
+
   const [openLightBox, setOpenLightBox] = useState(false);
 
+  return (
+    <li>
+      <div className="list_inner">
+        <div className="image">
+          <Image
+            src="/img/thumbs/4-2.jpg"
+            alt=""
+            width={4}
+            height={2}
+            layout="responsive"
+          />
+          <div className="main" data-img-url={image} />
+          <a
+            className="edrea_tm_full_link zoom"
+            href="#"
+            onClick={() => setOpenLightBox(true)}
+          />
+          <Lightbox
+            open={openLightBox}
+            close={() => setOpenLightBox(false)}
+            slides={LightboxImages}
+          />
+        </div>
+      </div>
+    </li>
+  );
+};
+
+const PortfolioModal = ({ data, close, open }) => {
   useEffect(() => {
     dataImage();
   }, [data]);
@@ -20,8 +56,9 @@ const PortfolioModal = ({ data, close, open }) => {
           <Image
             src="/img/thumbs/4-2.jpg"
             alt=""
-            width={800}
-            height={400}
+            width={4}
+            height={2}
+            layout="responsive"
           />
           <div className="main" data-img-url={data.mainImage} />
         </div>
@@ -40,50 +77,14 @@ const PortfolioModal = ({ data, close, open }) => {
         </div>
         <div className="additional_images">
           <ul className="gallery_zoom">
-            <li>
-              <div className="list_inner">
-                <div className="image">
-                  <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-img-url="img/portfolio/7.jpg" />
-                  <a
-                    className="edrea_tm_full_link zoom"
-                    href="#"
-                    onClick={() => setOpenLightBox(true)}
-                  />
-                  <Lightbox
-                    open={openLightBox}
-                    close={() => setOpenLightBox(false)}
-                    slides={[
-                      { src: "img/portfolio/7.jpg" },
-                    ]}
-                  />
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="list_inner">
-                <div className="image">
-                  <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-img-url="img/portfolio/8.jpg" />
-                  <a
-                    className="edrea_tm_full_link zoom"
-                    href="img/portfolio/8.jpg"
-                  />
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="list_inner">
-                <div className="image">
-                  <img src="img/thumbs/4-2.jpg" alt="" />
-                  <div className="main" data-img-url="img/portfolio/9.jpg" />
-                  <a
-                    className="edrea_tm_full_link zoom"
-                    href="img/portfolio/9.jpg"
-                  />
-                </div>
-              </div>
-            </li>
+            {data.images.map((image, index) => (
+              <ImageWithLightbox
+                key={image}
+                image={image}
+                index={index}
+                imagesList={data.images}
+              />
+            ))}
           </ul>
         </div>
       </div>
