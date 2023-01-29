@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
   return (
     <State>
       <Head>
-        <link rel="icon" type="image/png" href="img/favicon.png" />
+        <link rel="icon" type="image/png" href="img/favicon.ico" />
         <title>James Hoffman | Software Engineer</title>
       </Head>
       <PreLoader />
