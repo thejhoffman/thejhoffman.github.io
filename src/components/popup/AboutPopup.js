@@ -115,9 +115,12 @@ const AboutPopup = ({ open, close, aboutData }) => {
               </div>
               <div className="text">
                 <p>
-                  About detail
-                  Added line to test deploy
-                  Another line to test deploy again
+                  I am a fullstack web developer with a strong foundation in languages
+                  such as Python, JavaScript, HTML, and CSS. Knowledgeable in Domain-driven
+                  design and familiar with frameworks such as Django, FastAPI, React, and
+                  Bootstrap. Committed to continuously learning and growing, with a passion
+                  for creating user-friendly, scalable web applications. Eager to use my skills
+                  and enthusiasm to contribute to a team and deliver high-quality projects.
                 </p>
               </div>
             </div>

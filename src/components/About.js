@@ -88,8 +88,10 @@ const About = () => {
               </div>
               <div className="text">
                 <p>
-                  My name is <span>James Hoffman</span> I am a software engineer,
-                  and {`I'm`} very passionate and dedicated to my work.
+                  My name is <span>James Hoffman</span>. I am fullstack web developer with a passion
+                  for creating innovative solutions and a drive to constantly learn and grow in
+                  the field. Seeking opportunities to bring fresh ideas and a strong work ethic to
+                  any project.
                 </p>
               </div>
               <div className="edrea_tm_button">
