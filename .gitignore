@@ -3,3 +3,4 @@ node_modules
 .vscode
 out
 out_extras
+.env.local
