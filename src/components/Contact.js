@@ -3,32 +3,35 @@ import { useState } from "react";
 
 const Contact = () => {
   const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
+    user_name: "",
+    user_email: "",
     message: "",
   });
-  const { name, email, message } = mailData;
+  const { user_name, user_email, message } = mailData;
   const [error, setError] = useState(null);
+
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
-  const onSubmit = (e) => {
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    if (name.length === 0 || email.length === 0 || message.length === 0) {
+
+    if (user_name.length === 0 || user_email.length === 0 || message.length === 0) {
       setError(true);
       clearError();
     } else {
       emailjs
         .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
+          "service_cetipvl", // service id
+          "template_joz8wfh", // template id
           mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
+          "I5lDy2ib9qczWOxyS" // public api
         )
         .then(
           (response) => {
             setError(false);
             clearError();
-            setMailData({ name: "", email: "", message: "" });
+            setMailData({ user_name: "", user_email: "", message: "" });
           },
           (err) => {
             console.log(err.text);
@@ -36,11 +39,13 @@ const Contact = () => {
         );
     }
   };
+
   const clearError = () => {
     setTimeout(() => {
       setError(null);
     }, 2000);
   };
+
   return (
     <div className="edrea_tm_section hidden animated" id="contact">
       <div className="section_inner">
@@ -93,12 +98,14 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
+
             <div className="right">
               <div className="fields">
                 <form
                   className="contact_form"
                   id="contact_form"
-                  onSubmit={(e) => onSubmit(e)}
+                  // ref={form}
+                  onSubmit={sendEmail}
                 >
                   <div
                     className="returnmessage"
@@ -122,9 +129,9 @@ const Contact = () => {
                             id="name"
                             type="text"
                             placeholder="Name"
-                            name="name"
+                            name="user_name"
                             onChange={(e) => onChange(e)}
-                            value={name}
+                            value={user_name}
                           />
                         </div>
                       </li>
@@ -133,9 +140,9 @@ const Contact = () => {
                           <input
                             id="email"
                             type="email"
-                            name="email"
+                            name="user_email"
                             onChange={(e) => onChange(e)}
-                            value={email}
+                            value={user_email}
                             placeholder="Email"
                             autoComplete="off"
                           />
