@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { context } from "../context/context";
+import Image from "next/legacy/image";
 
 const Header = () => {
   const navContext = useContext(context);
@@ -12,7 +13,12 @@ const Header = () => {
       <div className="header_inner">
         <div className="logo">
           <a href="#" onClick={() => changeNav("home")}>
-            {/* <img src="img/logo/logo.png" alt="" /> */}
+            <Image
+              src="/img/logo/jh_logo.png"
+              alt=""
+              width={40}
+              height={40}
+            />
           </a>
         </div>
         <div className="menu">
@@ -45,7 +51,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 export default Header;
