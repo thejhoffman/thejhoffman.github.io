@@ -45,6 +45,12 @@ const ImageWithLightbox = ({ image, index, imagesList }) => {
 };
 
 const PortfolioModal = ({ data, close, open }) => {
+  const [descLines, setDescLines] = useState([]);
+
+  useEffect(() => {
+    setDescLines(data.description.split('*'));
+  }, [data.description]);
+
   useEffect(() => {
     dataImage();
   }, [data]);
@@ -71,9 +77,13 @@ const PortfolioModal = ({ data, close, open }) => {
         </div>
 
         <div className="text">
-          <p>
-            {data.description}
-          </p>
+          {descLines.map((line, index) => {
+            return (
+              <p key={index}>
+                {line}
+              </p>
+            );
+          })}
         </div>
         <div className="additional_images">
           <ul className="gallery_zoom">

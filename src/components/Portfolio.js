@@ -9,7 +9,13 @@ const projectData = {
     name: "Largesseance",
     detail: "gitlab.com/largesseance/project-gamma",
     detailLink: "https://gitlab.com/largesseance/project-gamma",
-    description: "This is the description for Largesseance",
+    description: `Largesseance is the final module project from my time a Hack Reactor.
+      *- Developed in a team alongside three of my cohorts mates in which we had the freedom to come up with the design and concept from scratch.
+      *- It is a web application built using FastAPI (for the backend), React with Redux (for the frontend), third-party Etsy API (for product information), and Bootstrap (for styling).
+      *- The purpose of the project was to provide personalized gift recommendations based on a recipient's preferences and interests.
+      *- The team worked collaboratively, utilizing daily stand-up meetings to track progress and resolve any issues.
+      *- FastAPI was chosen for its fast performance and ease of use. React Redux allowed for efficient state management, and the third-party Etsy API provided a vast amount of product information. Bootstrap facilitated quick styling and responsive design.
+      *- Overall, the team found the project to be challenging but rewarding, as we were able to apply our technical skills and work together effectively to deliver a functional and user-friendly product.`,
     mainImage: "/img/portfolio/largesseance/main.png",
     mainImageAlt: "Largesseance project picture",
     images: [
@@ -24,7 +30,12 @@ const projectData = {
     name: "CarCar",
     detail: "gitlab.com/thejhoffman/project-beta",
     detailLink: "https://gitlab.com/thejhoffman/project-beta",
-    description: "This is the description for CarCar",
+    description: `CarCar is the second module project from my time a Hack Reactor.
+    *- Developed in a two person team alongside one of my other cohorts mates in which we had create a web app to manage an automobile dealership.
+    *- The project aimed to track inventory, sales, and services provided by the dealership.
+    *- It utilized modern technologies such as React for front-end development, Django for the back-end, and Bootstrap for styling.
+    *- The project's architecture was built with microservices in mind, and a poller was used to facilitate communication between the different microservices.
+    *- Restful APIs were also utilized to allow for seamless communication between the front-end and back-end.`,
     mainImage: "/img/portfolio/carcar/main.png",
     mainImageAlt: "CarCar project picture",
     images: [
@@ -52,7 +63,10 @@ const projectData = {
     name: "Tracker",
     detail: "gitlab.com/thejhoffman/project-alpha-aug",
     detailLink: "https://gitlab.com/thejhoffman/project-alpha-aug/-/tree/pretty",
-    description: "This is the description for Tracker",
+    description: `Tracker is the first module project from my time a Hack Reactor.
+      *- Developed as a solo project that aimed to develop a web-based application for individuals or teams to track their tasks and projects efficiently.
+      *- The project was developed using the Django framework, which was utilized not only for building the backend and handling the database but also for rendering the HTML frontend.
+      *- The frontend was styled using native CSS, which was used to create a responsive and user-friendly interface.`,
     mainImage: "/img/portfolio/tracker/main.png",
     mainImageAlt: "Tracker project picture",
     images: [
