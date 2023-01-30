@@ -60,7 +60,7 @@ const Contact = () => {
               <ul>
                 <li>
                   <div className="list_inner">
-                    <i className="icon-linkedin-squared" />
+                    <i className="icon-linkedin-1" />
                     <span>
                       <a href="https://www.linkedin.com/in/jamesvhoffman/">
                         linkedin.com/in/jamesvhoffman
