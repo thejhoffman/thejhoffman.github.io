@@ -1,5 +1,6 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
+import Image from "next/legacy/image";
 
 const Contact = () => {
   const [mailData, setMailData] = useState({
@@ -60,8 +61,15 @@ const Contact = () => {
               <ul>
                 <li>
                   <div className="list_inner">
-                    <i className="icon-linkedin-1" />
+                    <i className="icon-linkedin-circled" />
                     <span>
+                      {/* <Image
+                        className="icon-linkedin-squared"
+                        src={"/img/svg/linkedin.svg"}
+                        alt=""
+                        height={16}
+                        width={16}
+                      /> */}
                       <a href="https://www.linkedin.com/in/jamesvhoffman/">
                         linkedin.com/in/jamesvhoffman
                       </a>
