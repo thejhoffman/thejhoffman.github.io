@@ -1,10 +1,20 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import useClickOutside from "../../useClickOutside";
 
 const Modal = ({ open, close, children }) => {
   let domNode = useClickOutside(() => {
     // close();
   });
+
+  useEffect(() => {
+    setTimeout(() => {
+      const modalScroll = document.getElementsByClassName("description_wrap");
+      Array.from(modalScroll).forEach(element => {
+        element.scrollTop = 0;
+      });
+    }, 500);
+  }, [close]);
+
   return (
     <Fragment>
       <div className={`edrea_tm_modalbox ${open ? "opened" : ""}`}>
