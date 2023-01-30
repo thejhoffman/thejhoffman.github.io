@@ -56,7 +56,7 @@ const AboutPopup = ({ open, close, aboutData }) => {
                 </li> */}
                 <li>
                   <div className="list_inner">
-                    <i className="icon-linkedin-squared" />
+                    <i className="icon-linkedin-2" />
                     <span>
                       <a href="https://www.linkedin.com/in/jamesvhoffman/">
                         linkedin.com/in/jamesvhoffman

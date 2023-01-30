@@ -57,20 +57,10 @@ const Contact = () => {
           </div>
           <div className="wrapper">
             <div className="left">
-              <i className="icon-linkedin-circled-1" />
-              <i className="icon-linkedin" />
-              <i className="icon-linkedin-3" />
-              <i className="icon-linkedin-squared" />
-              <i className="icon-linkedin-2" />
-              <i className="icon-linkedin-rect" />
-              <i className="icon-linkedin-circled-2" />
-              <i className="icon-linkedin-4" />
-              <i className="icon-linkedin-1" />
-              {/* Testing icons during deploy */}
               <ul>
                 <li>
                   <div className="list_inner">
-                    <i className="icon-linkedin-circled-1" />
+                    <i className="icon-linkedin-2" />
                     <span>
                       <a href="https://www.linkedin.com/in/jamesvhoffman/">
                         linkedin.com/in/jamesvhoffman
